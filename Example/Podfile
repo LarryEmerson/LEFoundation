@@ -1,5 +1,5 @@
 use_frameworks!
-target 'LEFoundation_Tests' do
+target 'LEFoundation_Test' do
   pod 'LEFoundation', :path => '../'
   
   
