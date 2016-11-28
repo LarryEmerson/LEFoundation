@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08198F4317A78FDC0496A3AE9BE5570F /* LEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1353E731BF7F0AE19A8596CA31D8FF0E /* LEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		314C5E367B2316505DE7559C59751647 /* Pods-LEFoundation_Test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 612148859D88FC7E986EB2BBD389E5B8 /* Pods-LEFoundation_Test-dummy.m */; };
+		802255811DEC259300335249 /* LEFoundations.h in Headers */ = {isa = PBXBuildFile; fileRef = 802255801DEC259300335249 /* LEFoundations.h */; };
 		9B10BB6AA067B20031B59A75CB9DD6AC /* LEFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0E058BA56A3E661EBD755394282E54 /* LEFoundation-dummy.m */; };
 		B5D3A0D7D613C343619C5E86FB65A1D5 /* LEFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BE63C2D9D1615970C93A029883102 /* LEFoundation.m */; };
 		BB1D98AD15CC0949F404A7E420E95634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -33,19 +34,20 @@
 		1353E731BF7F0AE19A8596CA31D8FF0E /* LEFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEFoundation.h; sourceTree = "<group>"; };
 		1DF0C61AB47BA602B37F6224BF5CFA2E /* Pods-LEFoundation_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEFoundation_Test.release.xcconfig"; sourceTree = "<group>"; };
 		1E9CD5EBCDB3C9C71994A778B91A4276 /* LEFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEFoundation-umbrella.h"; sourceTree = "<group>"; };
-		1FBFD2E16789AB6C173874B4FCF31DF9 /* LEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEFoundation.framework; path = LEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FB4B573F7A5E69D32FFB46810B275D /* Pods_LEFoundation_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEFoundation_Test.framework; path = "Pods-LEFoundation_Test.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBFD2E16789AB6C173874B4FCF31DF9 /* LEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FB4B573F7A5E69D32FFB46810B275D /* Pods_LEFoundation_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEFoundation_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38842F5794CF189A416EDF4DFCB9022F /* Pods-LEFoundation_Test-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEFoundation_Test-frameworks.sh"; sourceTree = "<group>"; };
-		39FC87F4324C1EF4A4D864EBC119136F /* LEFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LEFoundation.modulemap; sourceTree = "<group>"; };
+		39FC87F4324C1EF4A4D864EBC119136F /* LEFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LEFoundation.modulemap; sourceTree = "<group>"; };
 		612148859D88FC7E986EB2BBD389E5B8 /* Pods-LEFoundation_Test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEFoundation_Test-dummy.m"; sourceTree = "<group>"; };
 		7FDB03914E609A8E39B535CF909BE015 /* LEFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEFoundation-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		802255801DEC259300335249 /* LEFoundations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEFoundations.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AAD8CAF1095DFBC3F4A0F3C8834E3B3 /* Pods-LEFoundation_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEFoundation_Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A000F46D1F8EA116341898F27C86E8F6 /* Pods-LEFoundation_Test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEFoundation_Test-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A69BEA1D9BEA41ABEFA5B0D30BA80113 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4269AF664DA53293CA4005E6C8F2269 /* Pods-LEFoundation_Test-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEFoundation_Test-acknowledgements.plist"; sourceTree = "<group>"; };
 		BC3BE63C2D9D1615970C93A029883102 /* LEFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEFoundation.m; sourceTree = "<group>"; };
-		C5363B9FFCF41AEBBAB0D654BF9A4145 /* Pods-LEFoundation_Test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LEFoundation_Test.modulemap"; sourceTree = "<group>"; };
+		C5363B9FFCF41AEBBAB0D654BF9A4145 /* Pods-LEFoundation_Test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LEFoundation_Test.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DD1A197AC156D08FC02AF300544F157B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE0E058BA56A3E661EBD755394282E54 /* LEFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEFoundation-dummy.m"; sourceTree = "<group>"; };
@@ -84,10 +86,10 @@
 		266AA3DF4FE4D5066534CE8F57D6436D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				802255801DEC259300335249 /* LEFoundations.h */,
 				1353E731BF7F0AE19A8596CA31D8FF0E /* LEFoundation.h */,
 				BC3BE63C2D9D1615970C93A029883102 /* LEFoundation.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -110,7 +112,6 @@
 			children = (
 				266AA3DF4FE4D5066534CE8F57D6436D /* Classes */,
 			);
-			name = LEFoundation;
 			path = LEFoundation;
 			sourceTree = "<group>";
 		};
@@ -193,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E378CF4644807E331857EE8AD6766933 /* LEFoundation-umbrella.h in Headers */,
+				802255811DEC259300335249 /* LEFoundations.h in Headers */,
 				08198F4317A78FDC0496A3AE9BE5570F /* LEFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
