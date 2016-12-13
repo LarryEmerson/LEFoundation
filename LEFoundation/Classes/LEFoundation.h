@@ -74,7 +74,9 @@ return _instace; \
 #define LELogFunc   fprintf(stderr,"=> FUNC: %s\n",__FUNCTION__);
 #define LELogObject(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"%@", ##__VA_ARGS__] UTF8String]);
 #define LELogInt(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"%d", ##__VA_ARGS__] UTF8String]);
+#define LELogFloat(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"%f", ##__VA_ARGS__] UTF8String]);
 #define LELogStringAndInt(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"%@ : %d", ##__VA_ARGS__] UTF8String]);
+#define LELogStringAndFloat(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"%@ : %f", ##__VA_ARGS__] UTF8String]);
 #define LELogTwoObjects(...) fprintf(stderr,"=> FUNC: %s %s\n",__FUNCTION__,[[NSString stringWithFormat:@"@@\n-->%@\n-->%@", ##__VA_ARGS__] UTF8String]);
 #define LELog(FORMAT, ...) fprintf(stderr,"=> (Line:%d) %s %s\n",__LINE__,__FUNCTION__,[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
@@ -115,4 +117,5 @@ return _instace; \
 @protocol LEAppMessageDelegate <NSObject>
 -(void) leOnShowAppMessageWith:(NSString *) message;
 @end
- 
+
+
