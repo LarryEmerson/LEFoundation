@@ -20,9 +20,9 @@
     NSString *jsonString = @"";
     if([[[UIDevice currentDevice].name lowercaseString] rangeOfString:@"simulator"].location !=NSNotFound){
         if([self isKindOfClass:[NSDictionary class]]||[self isMemberOfClass:[NSDictionary class]]){
-            jsonString = [self JSONStringWithDictionary:(NSDictionary *)self];
+            jsonString = [NSObject JSONStringWithDictionary:self];
         }else if([self isKindOfClass:[NSArray class]]||[self isMemberOfClass:[NSArray class]]){
-            jsonString = [self JSONStringWithArray:(NSArray *)self];
+            jsonString = [NSObject JSONStringWithArray:self];
         }
     }else{
         NSError *error=nil;
@@ -38,7 +38,7 @@
     }
     return jsonString;
 }
--(NSString*) JSONStringWithDictionary:(NSDictionary *) dic {
++(NSString*) JSONStringWithDictionary:(NSDictionary *) dic {
     NSMutableString *jsonString=[[NSMutableString alloc] initWithString:@""];
     NSString *value=nil;
     for (NSString *key in dic.allKeys) {
@@ -67,7 +67,7 @@
     [jsonString appendString:@"}"];
     return jsonString;
 }
--(NSString*) JSONStringWithArray:(NSArray *) array {
++(NSString*) JSONStringWithArray:(NSArray *) array {
     NSMutableString *jsonString=[[NSMutableString alloc] initWithString:@""];
     for (int i=0; i<array.count; i++) {
         id obj=[array objectAtIndex:i];
