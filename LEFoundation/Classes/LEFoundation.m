@@ -101,11 +101,14 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 -(NSObject *) leGetInstanceFromClassName{
-    NSObject *obj=[NSClassFromString(self) alloc];
-    NSAssert(obj!=nil,([NSString stringWithFormat:@"请检查类名是否正确：%@",self]));
-    return obj;
+    Class class=[self leClass];
+    return class?[class alloc]:nil;
 }
-
+-(Class) leClass{
+    Class class=NSClassFromString(self);
+    NSAssert(class,([NSString stringWithFormat:@"请检查类名是否正确：%@",self]));
+    return class;
+}
 -(id)leJSONValue {
     NSData* data = [self dataUsingEncoding:NSUTF8StringEncoding];
     __autoreleasing NSError* error = nil;

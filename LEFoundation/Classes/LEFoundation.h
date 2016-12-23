@@ -100,6 +100,8 @@ return _instace; \
 -(int)          leAsciiLength;
 /** 字符串映射类对象 */
 -(NSObject *)   leGetInstanceFromClassName;
+/** 字符串映射类 */
+-(Class) leClass;
 /** 字符串去空格 */
 -(NSString *)   leGetTrimmedString;
 /** 字符串转Json数据（Array，Dictionary） */
