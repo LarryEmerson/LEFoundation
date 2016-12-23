@@ -20,9 +20,9 @@
     NSString *jsonString = @"";
     if([[[UIDevice currentDevice].name lowercaseString] rangeOfString:@"simulator"].location !=NSNotFound){
         if([self isKindOfClass:[NSDictionary class]]||[self isMemberOfClass:[NSDictionary class]]){
-            jsonString = [NSObject JSONStringWithDictionary:self];
+            jsonString = [NSObject JSONStringWithDictionary:(NSDictionary *)self];
         }else if([self isKindOfClass:[NSArray class]]||[self isMemberOfClass:[NSArray class]]){
-            jsonString = [NSObject JSONStringWithArray:self];
+            jsonString = [NSObject JSONStringWithArray:(NSArray *)self];
         }
     }else{
         NSError *error=nil;
