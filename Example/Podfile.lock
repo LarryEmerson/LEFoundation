@@ -1,5 +1,5 @@
 PODS:
-  - LEFoundation (0.1.0)
+  - LEFoundation (0.1.5)
 
 DEPENDENCIES:
   - LEFoundation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LEFoundation: 9b10b67ef83c1d4c9dbafc3d5fb18fe1e14672a7
+  LEFoundation: 346976259fa7449b4254cf96329ed9d4757011b1
 
 PODFILE CHECKSUM: 2a4c26b588051dd3acc6a109bef0ab94d2f7e6cc
 
