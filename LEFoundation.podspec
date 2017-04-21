@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'LEFoundation'
-s.version          = '0.1.6'
+s.version          = '0.1.7'
 s.summary          = 'LarryEmerson，IOS开发多种库会依赖的基本库'
 s.homepage         = 'https://github.com/LarryEmerson/LEFoundation'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
