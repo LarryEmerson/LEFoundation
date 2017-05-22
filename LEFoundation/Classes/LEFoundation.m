@@ -177,13 +177,13 @@
     return [[NSString alloc] initWithData:nsdataFromBase64String encoding:NSUTF8StringEncoding];
 }
 
--(NSString *) encryptUseDESkey:(NSString *)key andiv:(Byte[])iv{
+-(NSString *) leEncryptUseDESkey:(NSString *)key andiv:(Byte[])iv{
     NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
     NSString *ciphertext = nil;
     NSData *gbkData=[self dataUsingEncoding:gbkEncoding];
     const char *textBytes = [gbkData bytes];
     NSUInteger dataLength = gbkData.length;
-    unsigned char buffer[1024];
+    unsigned char buffer[1024*100];
     memset(buffer, 0, sizeof(char));
     size_t numBytesEncrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
@@ -191,7 +191,7 @@
                                           [key UTF8String], kCCKeySizeDES,
                                           iv,
                                           textBytes, dataLength,
-                                          buffer, 1024,
+                                          buffer, 1024*100,
                                           &numBytesEncrypted);
     if (cryptStatus == kCCSuccess) {
         NSData *data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesEncrypted];
@@ -199,7 +199,7 @@
     }
     return ciphertext;
 }
--(NSString *) decryptUseDESkey:(NSString*)key andiv:(Byte[])iv{
+-(NSString *) leDecryptUseDESkey:(NSString*)key andiv:(Byte[])iv{
     NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
     NSData* cipherData = [[NSData alloc] initWithBase64EncodedString:self options:0];
     unsigned char buffer[1024*100];

@@ -1,6 +1,6 @@
 {
   "name": "LEFoundation",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "summary": "LarryEmerson，IOS开发多种库会依赖的基本库",
   "homepage": "https://github.com/LarryEmerson/LEFoundation",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/LarryEmerson/LEFoundation.git",
-    "tag": "0.1.7"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "7.0"

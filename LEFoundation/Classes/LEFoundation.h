@@ -139,9 +139,9 @@ return _instace; \
 /** 字符串64解密 */
 -(NSString *)   leBase64Decoder;
 /** DES加密 */
--(NSString *) encryptUseDESkey:(NSString *)key andiv:(Byte[])iv;
+-(NSString *) leEncryptUseDESkey:(NSString *)key andiv:(Byte[])iv;
 /** DES解密 */
--(NSString *) decryptUseDESkey:(NSString*)key andiv:(Byte[])iv;
+-(NSString *) leDecryptUseDESkey:(NSString*)key andiv:(Byte[])iv;
 @end
 /** 封装模块留给外部的消息传递入口，可用于全局网络断开检测的消息提醒 */
 @protocol LEAppMessageDelegate <NSObject>
