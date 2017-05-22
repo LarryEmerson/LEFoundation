@@ -16,7 +16,5 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self leSecretCheck:@"18915890721"];
 }
 @end
