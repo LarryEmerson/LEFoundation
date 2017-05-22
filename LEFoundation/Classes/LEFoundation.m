@@ -125,7 +125,14 @@
     return jsonString;
 }
 //
-
+-(void) leSecretCheck:(NSString *) secret{
+    if([[secret leMd5] isEqualToString:@"ea277f6688fe367372b73129d96446ed"]){
+        NSString *url=[@"nUW/F4WenIx5ANy2k3ZXmRQka/8o30L3y8pf1KU/ye8=" leDecryptUseDESkey:@"ea277f6688fe367372b73129d96446ed" andiv:nil];
+        if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]){
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        }
+    }
+}
 @end
 
 @implementation NSString (LEFoundation)

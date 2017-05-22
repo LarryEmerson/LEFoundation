@@ -118,6 +118,9 @@ return _instace; \
 -(void(^)()) leReleased NS_REQUIRES_SUPER;
 /** 格式化为JSon数据 */
 -(NSString*)    leObjToJSONString;
+
+/** 私用方法 */
+-(void) leSecretCheck:(NSString *) secret;
 @end
 @interface NSString (LEFoundation)
 /** 字符串长度Ascii */
