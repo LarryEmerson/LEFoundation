@@ -6,6 +6,6 @@ s.homepage         = 'https://github.com/LarryEmerson/LEFoundation'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'LarryEmerson' => 'larryemerson@163.com' }
 s.source           = { :git => 'https://github.com/LarryEmerson/LEFoundation.git', :tag => s.version.to_s }
-s.ios.deployment_target = '7.0'
+s.ios.deployment_target = '8.1'
 s.source_files = 'LEFoundation/Classes/**/*.{h,m}'
 end

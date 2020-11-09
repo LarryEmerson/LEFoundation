@@ -1,0 +1,6 @@
+framework module LEFoundation {
+  umbrella header "LEFoundation.h"
+
+  export *
+  module * { export * }
+}
